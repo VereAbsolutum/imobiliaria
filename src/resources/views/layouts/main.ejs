@@ -6,11 +6,15 @@
     <title>Bootstrap demo</title>
     <!-- tailwind -->
     <link href="/assets/css/tailwind.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <!-- Importando Alpine.js -->
+    <script src="assets/plugins/alpinejs/dist/cdn.js" type="module" defer></script>
     <title>Meu titulo</title>
     </head>
   <body>
-    <main>
-        <%- body %>
-    </main>
+    <!-- HEADER -->
+    <%- include('../partials/header') %>
+    <!-- CONTENT -->
+    <%- body %>
   </body>
 </html>
