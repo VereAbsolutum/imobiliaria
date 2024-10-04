@@ -2,21 +2,21 @@
     <!-- Botões de Tab -->
     <div class="flex space-x-1 rounded-xl p-1 max-w-md " role="tablist">
         <button
-        class="w-full py-2.5 text-sm leading-5 font-medium"
-        :class="{
-            'bg-red-500 text-white shadow': activeTab === 0,
-            'bg-red-900 text-red-200 mt-2': activeTab !== 0
-        }"
-        @click="activeTab = 0"
+            class="w-full py-2.5 text-sm leading-5 font-medium transition duration-300 ease-in-out"
+            :class="{
+                'bg-red-500 text-white shadow-lg': activeTab === 0,
+                'bg-red-900 text-red-200': activeTab !== 0
+            }"
+            @click="activeTab = 0"
         >
             Tab 1
         </button>
 
         <button
-            class="w-full py-2.5 text-sm leading-5 font-medium"
+            class="w-full py-2.5 text-sm leading-5 font-medium transition duration-300 ease-in-out"
             :class="{
-                'bg-red-500 text-white shadow': activeTab === 1,
-                'bg-red-900 text-red-200 mt-2': activeTab !== 1
+                'bg-red-500 text-white shadow-lg': activeTab === 1,
+                'bg-red-900 text-red-200': activeTab !== 1
             }"
             @click="activeTab = 1"
         >
@@ -24,10 +24,10 @@
         </button>
 
         <button
-            class="w-full py-2.5 text-sm leading-5 font-medium"
+            class="w-full py-2.5 text-sm leading-5 font-medium transition duration-300 ease-in-out"
             :class="{
-                'bg-red-500 text-white shadow': activeTab === 2,
-                'bg-red-900 text-red-200 mt-2': activeTab !== 2
+                'bg-red-500 text-white shadow-lg': activeTab === 2,
+                'bg-red-900 text-red-200': activeTab !== 2
             }"
             @click="activeTab = 2"
         >
@@ -41,7 +41,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis ullam hic sed numquam laborum deserunt maiores, cupiditate quod nulla nostrum earum consequatur nihil qui. Quo distinctio impedit officia et.<120></120>
         </div>
         <div x-show="activeTab === 1" class="bg-white rounded-xl p-3">
-            Conteúdo da Tab 2
+
+            <!-- range-slider -->
+            <%- include("forms/form-search") %>
         </div>
     </div>
 </div>
