@@ -1,3 +1,5 @@
 export default (router) => {
-    router.use('/', (req, res) => { res.render('site/home/home') });
-}
+  router.use("/", (req, res) => {
+    res.render("pages/home");
+  });
+};

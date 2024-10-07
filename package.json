@@ -7,19 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/public/index.js",
     "watch": "nodemon src/public/index.js",
-    "build:css": "npx tailwindcss -i ./public/assets/css/style.css -o ./public/assets/css/tailwind.css --watch"
+    "build:css": "npx tailwindcss -i ./src/resources/assets/css/app.css -o ./public/assets/css/app.css --watch"
   },
   "author": "VereAbsolutum",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "@headlessui/react": "^2.1.8",
+    "@tailwindcss/forms": "^0.5.9",
     "alpinejs": "^3.14.1",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "body-parser": "^1.20.3",
     "bootstrap": "^5.3.3",
+    "daisyui": "^4.12.12",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "express-ejs-layouts": "^2.5.1",

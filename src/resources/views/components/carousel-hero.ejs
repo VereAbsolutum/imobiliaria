@@ -1,0 +1,68 @@
+<div class="swiper-container h-full w-full">
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div
+      class="swiper-slide bg-cover bg-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&w=800');
+      "
+    >
+      <div
+        class="flex items-center justify-center h-full bg-black bg-opacity-50"
+      >
+        <h2 class="text-4xl font-bold text-white">
+          Encontre seu imóvel ideal!
+        </h2>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div
+      class="swiper-slide bg-cover bg-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/1452695/pexels-photo-1452695.jpeg?auto=compress&cs=tinysrgb&w=800');
+      "
+    >
+      <div
+        class="flex items-center justify-center h-full bg-black bg-opacity-50"
+      >
+        <h2 class="text-4xl font-bold text-white">
+          Imóveis que cabem no seu bolso!
+        </h2>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div
+      class="swiper-slide bg-cover bg-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/2411163/pexels-photo-2411163.jpeg?auto=compress&cs=tinysrgb&w=800');
+      "
+    >
+      <div
+        class="flex items-center justify-center h-full bg-black bg-opacity-50"
+      >
+        <h2 class="text-4xl font-bold text-white">
+          Realize o sonho da casa própria!
+        </h2>
+      </div>
+    </div>
+  </div>
+  <!-- Adiciona botões de navegação -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".swiper-container", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>

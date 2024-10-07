@@ -1,20 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <!-- tailwind -->
-    <link href="/assets/css/tailwind.css" rel="stylesheet">
-    <link href="/assets/css/style.css" rel="stylesheet">
-    <!-- Importando Alpine.js -->
-    <script src="assets/plugins/alpinejs/dist/cdn.js" type="module" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Meu titulo</title>
-    </head>
+    <!-- Mantenha apenas esta tag title -->
+
+    <!-- app.css -->
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Importando Alpine.js -->
+    <script
+      src="assets/plugins/alpinejs/dist/cdn.js"
+      type="module"
+      defer
+    ></script>
+
+    <!-- Swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"
+    />
+  </head>
   <body>
-    <!-- HEADER -->
-    <%- include('../partials/header') %>
-    <!-- CONTENT -->
+    <!-- Header -->
+    <div class="container mx-auto px-4">
+      <%- include('../components/header') %>
+    </div>
+
+    <!-- Content -->
     <%- body %>
+
+    <!-- Footer -->
+    <div class="bg-base-200">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <%- include('../components/footer') %>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

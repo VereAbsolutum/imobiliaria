@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.section {
+    padding-top: 6rem;
+    padding-bottom: 3rem
+}
